@@ -1,0 +1,80 @@
+.gradient-btn{
+    font-family: var(--font-philosopher);
+    padding: 8px 32px;
+    background: linear-gradient(270deg, #e6c482 0%, #b07638 100%);
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    
+    &:hover{
+        filter: hue-rotate(-7deg);
+    }
+    @include calculateResponsiveProperty(961px, 2550px, 22px, 30px, font-size);
+}
+
+.gold-outline-btn{
+    font-family: var(--font-philosopher);
+    padding: 8px 32px;
+    border: 2px solid #ce9054;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ce9054;
+    display: inline-block;
+    position: relative;
+
+    &::before{
+         content: "";
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         z-index: -1;
+         background: linear-gradient(270deg, #e6c482 0%, #b07638 100%);
+         opacity: 0;
+         transition: 300ms ease;
+    }
+    
+    
+    &:hover{
+        filter: hue-rotate(-7deg);
+        color: #fff;
+        border-color: transparent;
+        &::before{
+            opacity: 1;
+        }
+    }
+
+
+
+
+    @include calculateResponsiveProperty(961px, 2550px, 22px, 30px, font-size);
+}
+.blue-outline-btn{
+    color: #7ba5ba;
+
+    font-family: var(--font-philosopher);
+    padding: 8px 32px;
+    border: 2px solid #7ba5ba;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7ba5ba;
+    display: inline-block;
+    position: relative;
+
+    
+    
+    
+    &:hover{
+        background-color: #7ba5ba;
+        color: #fff;
+        border-color: transparent;
+        
+    }
+
+
+
+
+    @include calculateResponsiveProperty(961px, 2550px, 22px, 27px, font-size);
+}

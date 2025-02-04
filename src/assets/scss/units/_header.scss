@@ -1,0 +1,224 @@
+.header{
+    padding: 40px 24px 20px;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    z-index: 900;
+    top: 0;
+
+
+    @include calculateResponsiveProperty(480px, 960px, 24px, 100px, padding-left);
+    @include calculateResponsiveProperty(480px, 960px, 24px, 100px, padding-right);
+
+    @include calculateResponsiveProperty(961px, 1279px, 100px, 140px, padding-left);
+    @include calculateResponsiveProperty(961px, 1279px, 100px, 140px, padding-right);
+
+    @include calculateResponsiveProperty(1280px, 1919px, 32px, 140px, padding-left);
+    @include calculateResponsiveProperty(1280px, 1919px, 32px, 140px, padding-right);
+
+    @include calculateResponsiveProperty(1920px, 2550px, 140px, 260px, padding-left);
+    @include calculateResponsiveProperty(1920px, 2550px, 20px, 32px, padding-bottom);
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  
+.hamburger {
+    display: block;
+    
+    width: 50px;
+    height: 22px;
+    cursor: pointer;
+    position: relative;
+
+    @media (min-width: 1280px){
+        display: none;
+    }
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,#A67E1E,#E68B17); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: absolute;
+    left: 50%;
+    &:nth-child(1){
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+    &:nth-child(2){
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &:nth-child(3){
+        top: 100%;
+        transform: translate(-50%, -100%);
+    }
+}
+
+.hamburger.active {
+   span{
+        &:nth-child(1){
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+        &:nth-child(2){
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg)
+        }
+
+        &:nth-child(3){
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg)
+        }
+   }
+    
+}
+
+
+.h-menu {
+    display: none;
+    @media (min-width: 1280px){
+        display: block;
+        order: 2;
+    }
+}
+.h-menu__list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+
+
+    @include calculateResponsiveProperty(1024px, 1919px, 32px, 60px, column-gap);
+    @include calculateResponsiveProperty(1920px, 2550px, 60px, 100px, column-gap);
+}
+.h-menu__item {
+}
+.h-menu__link {
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-philosopher);
+        
+    color: #fff;
+
+    font-size: 16px;
+    @include calculateResponsiveProperty(1024px, 1919px, 16px, 18px, font-size);
+    @include calculateResponsiveProperty(1920px, 2550px, 18px, 22px, font-size);
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transition: 300ms ease;
+        opacity: 0;
+        transform: translate(0, 2px);
+    }
+}
+
+
+.h-menu__link:hover{
+    &::before{
+        opacity: 1;
+        transform: translate(0, 0px);
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+    @media (min-width: 1280px){
+        order: 1;
+    }
+}
+.header-logo__img {
+    flex-shrink: 0;
+    width: 51px;
+    height: 45px;
+
+    @media (min-width: 1280px){
+        width: 70px;
+        height: 61px;        
+    }
+
+}
+.header-logo__slogan {
+
+    display: none;
+    font-family: var(--font-philosopher);
+    
+    color: #fff;
+    @media (min-width: 1280px){
+        display: block;
+    }
+
+    font-size: 16px;
+    @include calculateResponsiveProperty(1024px, 1919px, 16px, 18px, font-size);
+    @include calculateResponsiveProperty(1920px, 2550px, 18px, 22px, font-size);
+}
+
+
+.h-contacts {
+    display: none;
+
+    @media (min-width: 1280px){
+        display: flex;
+        align-items: center;
+        order: 3;
+
+        column-gap: 32px;
+    }
+
+    @include calculateResponsiveProperty(1024px, 1919px, 32px, 68px, column-gap);
+}
+.h-contacts__phone {
+    
+    font-family: var(--font-philosopher);
+    
+    color: #fff;
+    font-size: 16px;
+    @include calculateResponsiveProperty(1024px, 1919px, 16px, 18px, font-size);
+    @include calculateResponsiveProperty(1920px, 2550px, 18px, 22px, font-size);
+}
+.h-contacts__soc-links-block {
+}
+.h-contacts__soc-link {
+    
+    width: 40px;
+    height: 40px;
+    
+
+    img{
+        transition: 400ms ease;
+        filter: brightness(4);
+    }
+
+    
+    &:hover{
+        img{
+            filter: brightness(1);
+        }
+    }
+
+}
+.h-contacts__soc-links-block{
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+}
+
+.i-facebook{
+    width: 8px;
+    height: 16px;
+}

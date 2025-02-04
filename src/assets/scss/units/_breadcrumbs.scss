@@ -1,0 +1,50 @@
+.breadcrumbs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+    a, span{
+        font-family: var(--font-philosopher);
+        color: #070707;
+        font-size: 18px;
+        line-height: 1.2;
+        position: relative;
+        padding-left: 1.2em;
+        text-align: center;
+        @include calculateResponsiveProperty(480px, 960px, 18px, 20px, font-size);
+        @include calculateResponsiveProperty(1280px, 1919px, 20px, 24px, font-size);
+
+        &::before{
+             content: "•";
+            position: absolute;
+            display: inline-flex;
+            font-size: .75em;
+            color: inherit;
+            transition: 300ms ease;
+
+            left: 0.6em;
+            top: .375em;
+        }
+
+    }
+    a{
+        &:hover{
+            color: #ce9054;
+        }
+    }
+    span{
+        padding-right: 1.2em;
+        &::after{
+           content: "•";
+           position: absolute;
+           display: inline-flex;
+           font-size: .75em;
+           color: inherit;
+           transition: 300ms ease;
+
+           right: 0.6em;
+           top: .375em;
+       }
+    }
+}

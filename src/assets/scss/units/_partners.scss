@@ -1,0 +1,23 @@
+.partners{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include calculateResponsiveProperty(480px, 960px, 32px, 60px, padding-top);
+    @include calculateResponsiveProperty(480px, 960px, 32px, 90px, padding-bottom);
+}
+.swiper.partners-slider{
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        img{
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+
+    }
+}

@@ -1,0 +1,70 @@
+.section.intro{
+    padding-top: 16px;
+
+    @include calculateResponsiveProperty(480px, 960px, 16px, 32px, padding-top);
+    @include calculateResponsiveProperty(961px, 1919px, 32px, 48px, padding-top);
+
+    padding-bottom: 140px;
+
+    @include calculateResponsiveProperty(961px, 2550px, 140px, 270px, padding-bottom);
+}
+
+.intro__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+
+    min-height: calc(100% + 140px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.intro-content{
+    border-radius: 40px;
+    padding: 32px 12px 40px;
+    border: 2px solid rgba($color: #fff, $alpha: .5);
+    backdrop-filter: blur(8px);
+    background-color: rgba($color: #fff, $alpha: .2);
+    @include calculateResponsiveProperty(480px, 960px, 12px, 28px, padding-left);
+    @include calculateResponsiveProperty(480px, 960px, 12px, 28px, padding-right);
+    @include calculateResponsiveProperty(961px, 2550px, 28px, 60px, padding-left);
+    @include calculateResponsiveProperty(961px, 2550px, 28px, 60px, padding-right);
+    @include calculateResponsiveProperty(480px, 960px, 40px, 80px, border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    color: #fff;
+
+    .brand{
+        margin-bottom: 24px;
+    }
+}
+
+
+
+.intro-content__title-block {
+    text-align: center;
+
+    margin-bottom: 40px;
+    @include calculateResponsiveProperty(961px, 2550px, 40px, 60px, margin-bottom);
+}
+.intro-content__title {
+    
+    color: #fff;
+    text-shadow: 0px 3px 4.85px rgba(11, 48, 67, 0.59);
+
+    margin-bottom: 12px;
+   
+
+    @include calculateResponsiveProperty(961px, 2550px, 12px, 32px, margin-bottom);
+}
+.intro-content__subtitle {
+    color: #fff;
+    font-size: 18px;
+    @include calculateResponsiveProperty(961px, 2550px, 18px, 20px, font-size);
+}
+

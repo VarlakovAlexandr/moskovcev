@@ -1,0 +1,125 @@
+.mob-menu{
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+    padding: 130px 24px 74px;
+    position: fixed;
+    z-index: 800;
+    background-color: rgba($color: #000000, $alpha: .8);
+
+
+    transition: ease 500ms;
+    transform: translate(0, -120%);
+
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+
+    @include calculateResponsiveProperty(480px, 960px, 24px, 100px, padding-left);
+    @include calculateResponsiveProperty(480px, 960px, 24px, 100px, padding-right);
+
+    @include calculateResponsiveProperty(961px, 1279px, 100px, 140px, padding-left);
+    @include calculateResponsiveProperty(961px, 1279px, 100px, 140px, padding-right);
+
+    @media (min-width: 1280px){
+        display: none !important;
+    }
+
+    .h-contacts__soc-links-block{
+        column-gap: 16px;
+    }
+
+    @media (min-width: 768px){
+        max-width: 480px;
+        height: 100vh;
+        transform: translate(-120%, 0%);
+    }
+}
+
+.mob-menu.active{
+    transform: translate(0, 0%);
+}
+
+
+.mob-fog{
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 700;
+    filter: blur(450px);
+    display: none;
+    opacity: 0;
+    backdrop-filter: blur(50px);
+    background-color: rgba($color: #fff, $alpha: .2);
+    @media (min-width: 1280px){
+        display: none !important;
+    }
+}
+
+
+.mob-fog.active{
+    display: block;
+    
+
+    animation: showMobFog 500ms forwards;
+}
+
+@keyframes showMobFog {
+    to{
+        opacity: 1;
+        filter: blur(250px);
+    }
+}
+
+.mob-menu__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.mob-menu__link{
+    font-family: var(--font-family);
+    font-size: 21px;
+    color: #fff;
+}
+
+.mob-menu__center-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+
+    li{
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+
+        a, span, p, div{
+            font-family: var(--font-family);
+            font-size: 10px;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+
+}
+
+.mob-menu__round-icon{
+    width: 32px;
+    height: 32px;
+    border: 2px solid #fff;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    img{
+        max-width: 55%;
+        height: auto;
+    }
+}

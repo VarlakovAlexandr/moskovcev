@@ -1,0 +1,124 @@
+.about-am{
+
+    padding-bottom: 40px;
+    padding-top: 20px;
+    background-color: rgb(245, 245, 245);
+
+    @include calculateResponsiveProperty(390px, 960px, 20px, 40px, padding-top);
+}
+
+
+.about-am__content{
+    padding: 20px 12px 24px;
+    background-color: #fff;
+    ul{
+        font-size: 18px;
+        color: #070707;
+        line-height: 1.3;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    p + p{
+        margin-top: 20px;
+    }
+
+    p + ul{
+        margin-top: 20px;
+    }
+
+    ul + p{
+        margin-top: 20px;
+    }
+
+    @media (min-width: 768px){
+        padding: 32px;
+
+        display: grid;
+        grid-template-columns: 1.25fr 2fr;
+        grid-gap: 48px 24px;
+
+        @media (min-width: 1280px){
+            grid-gap: 48px 32px;
+        }
+    }
+}
+
+.about-am.catalog-p{
+    .about-am__content{
+        p + p{
+            margin-top: 28px;
+        }
+
+        p + ul{
+            margin-top: 28px;
+        }
+
+        ul + p{
+            margin-top: 28px;
+        }
+
+        @media (min-width: 1280px){
+            p + p{
+                margin-top: 40px;
+            }
+    
+            p + ul{
+                margin-top: 40px;
+            }
+    
+            ul + p{
+                margin-top: 40px;
+            }
+        }
+    }
+
+    @media (min-width: 768px){
+        .about-am__content{
+            grid-template-columns:  2fr 1.25fr;
+        }
+
+        .about-am__photo-container{
+            grid-column: 2 / 3;
+            grid-row: 1 / 2 ;
+        }
+
+        .about-am__text-block{
+            grid-column: 1 / 2;
+            grid-row: 1 / 2 ;
+        }
+    }
+}
+
+.about-am__photo{
+    width: 100%;
+    height: auto;
+}
+
+.about-am__btn-container{
+    text-align: center;
+    margin-top: 32px;
+
+    @media (min-width: 768px){
+        grid-column: span 2;
+        margin-top: 0;
+    }
+
+    @media (min-width: 1280px){
+        grid-column: unset;
+        margin-top: 48px;
+    }
+}
+
+.about-am__photo-container{
+    margin-bottom: 20px;
+    @media (min-width: 1280px){
+        margin-bottom: 0px;
+    }
+}
+
+.about-am__text-block{
+    @media (min-width: 1280px){
+        margin-top: 48px;
+    }
+}

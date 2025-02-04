@@ -1,0 +1,431 @@
+@@include('templates/header.html') 
+
+
+        <section class="section intro">
+            <img src="assets/img/sea.png" alt="" class="intro__bg">            
+            <div class="container">
+                <div class="intro-content">
+                    <div class="brand">
+                        <div class="brand__logo">
+                            <img src="assets/img/logo.svg" alt="">
+                        </div>
+                        <p class="brand__name">Александр Московцев</p>
+                        <p class="brand__description">Агентство Элитной Недвижимости</p>
+                    </div>
+
+                    <div class="intro-content__title-block">
+                        <h1 class="intro-content__title">ЛУЧШИЕ ОБЪЕКТЫ КУРОРТНОЙ НЕДВИЖИМОСТИ СОЧИ ДЛЯ ОТДЫХА И ИНВЕСТИЦИЙ</h1>
+                        <p class="intro-content__subtitle">Роскошные апартаменты с панорамным видом на море и горы от надежных застройщиков международного уровня. Современные жилые комплексы с развитой внутренней инфраструктурой и первоклассным сервисом, расположенные в самом сердце  черноморского побережья.<br> 
+                            Наслаждайтесь жизнью у моря в личной резиденции deluxe-класса или отдыхайте в собственном номере пятизвездочного отеля!<br> 
+                            Недвижимость в Сочи — ваш высоколиквидный актив, стабильный доход и надежная защита капитала!</p>
+                    </div>
+
+                    <a href="catalog.html" class="gradient-btn">Каталог</a>
+                </div>
+            </div>
+        </section>        
+
+        <section class="section i-realty-cards">
+            <div class="container">
+
+                <h2>Выберите объект</h2>
+
+                <div class="i-realty-cards__container">
+
+                    <button class="i-realty-cards__nav prev">
+                        <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.608 2.69802C16.7545 2.54535 16.8691 2.36577 16.9451 2.16952C17.0211 1.97327 17.0571 1.76419 17.0511 1.55423C17.0451 1.34427 16.9971 1.13754 16.9099 0.945832C16.8228 0.754127 16.6981 0.581206 16.5431 0.436942C16.388 0.292678 16.2057 0.179896 16.0064 0.105035C15.8071 0.0301738 15.5948 -0.00529984 15.3815 0.000639628C15.1683 0.0065791 14.9584 0.0538151 14.7637 0.139651C14.569 0.225486 14.3934 0.34824 14.2469 0.500904L0.443877 14.8925C0.158826 15.1894 0 15.5824 0 15.991C0 16.3996 0.158826 16.7927 0.443877 17.0896L14.2469 31.4827C14.3924 31.6387 14.568 31.7647 14.7634 31.8533C14.9588 31.942 15.1701 31.9915 15.3851 31.999C15.6001 32.0065 15.8145 31.9719 16.0158 31.8971C16.2171 31.8224 16.4013 31.709 16.5577 31.5636C16.7141 31.4181 16.8396 31.2435 16.9269 31.0499C17.0142 30.8563 17.0616 30.6475 17.0663 30.4358C17.071 30.224 17.0329 30.0134 16.9542 29.8162C16.8755 29.619 16.7579 29.4392 16.608 29.2872L3.85728 15.991L16.608 2.69802Z" fill="#070707" />
+                        </svg>
+                    </button>
+                    <button class="i-realty-cards__nav next">
+                        <svg width="17" height="32" viewBox="0 0 17 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.451636 29.302C0.307372 29.4546 0.194591 29.6342 0.11973 29.8305C0.0448689 30.0267 0.00939452 30.2358 0.015334 30.4458C0.0212734 30.6557 0.0685098 30.8625 0.154345 31.0542C0.240181 31.2459 0.362935 31.4188 0.515599 31.5631C0.668263 31.7073 0.847848 31.8201 1.0441 31.895C1.24035 31.9698 1.44942 32.0053 1.65938 31.9994C1.86934 31.9934 2.07608 31.9462 2.26778 31.8603C2.45949 31.7745 2.63241 31.6518 2.77667 31.4991L16.3687 17.1075C16.6494 16.8106 16.8058 16.4176 16.8058 16.009C16.8058 15.6004 16.6494 15.2073 16.3687 14.9104L2.77667 0.517278C2.63336 0.361272 2.46048 0.235295 2.26807 0.146668C2.07566 0.0580403 1.86756 0.00852892 1.65585 0.00100721C1.44414 -0.00651451 1.23305 0.028106 1.03484 0.102855C0.836621 0.177604 0.655235 0.290991 0.501212 0.436433C0.34719 0.581875 0.223601 0.756472 0.137625 0.950081C0.05165 1.14369 0.00500158 1.35245 0.000389133 1.56424C-0.00422331 1.77603 0.0332918 1.98663 0.110757 2.1838C0.188222 2.38097 0.304092 2.56078 0.451636 2.71279L13.0075 16.009L0.451636 29.302Z" fill="#070707" />
+                          </svg>
+                    </button>
+
+                    <div class="realties-slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide  swp-realty-card">
+                                <div class="swp-realty-card__photo">
+                                    <img src="assets/img/hotels/1.jpg" alt="">
+    
+                                    <button class="swp-realty-card__add-favorite">
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2216_146)">
+                                              <path d="M20.45 10.06H10.89L12.47 4.91C12.83 3.83 12.65 2.85 12.2 1.52C11.9 0.63 11.1 0.02 10.2 0C10.18 0 10.17 0 10.15 0C9.27999 0 8.51999 0.56 8.15999 1.48C7.69999 2.65 7.20999 3.74 6.84999 4.4L1.63999 11.49C0.609993 12.76 0.0399933 14.37 0.0399933 16.05V22.14C0.0399933 25.93 3.11999 29 6.89999 29H17.83C19.21 29 20.34 27.88 20.34 26.49V25.62C20.34 25.14 20.2 24.69 19.97 24.3C20.71 23.86 21.21 23.06 21.21 22.14V21.27C21.21 20.79 21.07 20.34 20.84 19.95C21.58 19.51 22.08 18.71 22.08 17.78V16.91C22.08 16.43 21.94 15.98 21.71 15.59C22.45 15.15 22.95 14.35 22.95 13.42V12.55C22.95 11.19 21.83 10.06 20.45 10.06ZM21.42 13.44C21.42 13.98 20.98 14.41 20.45 14.41H19.58H18.35V15.94H19.58C20.12 15.94 20.55 16.38 20.55 16.91V17.78C20.55 18.32 20.11 18.75 19.58 18.75H18.7H17.47V20.28H18.7C19.24 20.28 19.67 20.72 19.67 21.25V22.12C19.67 22.66 19.23 23.09 18.7 23.09H17.83H16.6V24.62H17.83C18.37 24.62 18.8 25.06 18.8 25.59V26.46C18.8 27 18.36 27.43 17.83 27.43H6.89999C3.96999 27.43 1.57999 25.04 1.57999 22.11V16.01C1.57999 14.69 2.01999 13.41 2.85999 12.39L8.11999 5.23L8.16999 5.15C8.74999 4.12 9.35999 2.6 9.58999 2C9.65999 1.81 9.83999 1.5 10.15 1.5H10.16C10.37 1.5 10.64 1.65 10.74 1.97C11.1 3.04 11.24 3.71 11 4.41L8.79999 11.56H20.43C20.97 11.56 21.4 12 21.4 12.53L21.42 13.44Z" fill="white" />
+                                              <path class="svg-bg" opacity="0" d="M19.89 10.42H10.8L12.3 5.54C12.65 4.52 12.47 3.59 12.04 2.33C11.76 1.48 11 0.900005 10.14 0.880005C10.13 0.880005 10.11 0.880005 10.09 0.880005C9.26 0.880005 8.54 1.41 8.19 2.28C7.76 3.4 7.3 4.43 6.95 5.05L2 11.78C1.02 12.98 0.479996 14.51 0.479996 16.1V21.88C0.479996 25.47 3.41 28.38 7.01 28.38H17.41C18.72 28.38 19.8 27.31 19.8 26V25.18C19.8 24.72 19.67 24.3 19.45 23.93C20.16 23.52 20.63 22.75 20.63 21.88V21.05C20.63 20.59 20.5 20.17 20.28 19.8C20.99 19.39 21.46 18.62 21.46 17.75V16.92C21.46 16.46 21.33 16.04 21.11 15.67C21.82 15.26 22.29 14.49 22.29 13.62V12.79C22.27 11.48 21.2 10.42 19.89 10.42Z" fill="white" />
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_2216_146">
+                                                <rect width="23" height="29" fill="white" />
+                                              </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="swp-realty-card__body">
+                                    <div class="swp-realty-card__top-description">
+                                        <p class="swp-realty-card__realty-name">Морская Искра</p>
+    
+                                        <ul class="swp-realty-card__options">
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/location.svg" alt="">
+                                                </div>
+                                                
+                                                <span>Сочи</span>
+                                            </li>
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/sea.svg" alt="">
+                                                </div>
+                                                
+                                                <span>300 м</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swp-realty-card__text-description">
+                                        <p>"Морская Искра" Сочи - это премиальные апартаменты в уютном курортном поселке Вардане, на первой береговой линии, в нескольких метрах от собственного ...</p>                                    
+                                    </div>
+                                    <div class="swp-realty-card__price-block">
+                                        <span class="swp-realty-card__price-caption">Стоимость</span>
+                                        <span class="swp-realty-card__price-value">от 14 500 000 ₽</span>
+                                    </div>
+    
+                                    <div class="swp-realty-card__btns">
+                                        <a href="#" class="swp-realty-card__details gold-outline-btn">Подробнее</a>
+                                        <a href="catalog.html" class="swp-realty-card__catalog gradient-btn">Каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  swp-realty-card">
+                                <div class="swp-realty-card__photo">
+                                    <img src="assets/img/hotels/2.jpg" alt="">
+    
+                                    <button class="swp-realty-card__add-favorite">
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2216_146)">
+                                              <path d="M20.45 10.06H10.89L12.47 4.91C12.83 3.83 12.65 2.85 12.2 1.52C11.9 0.63 11.1 0.02 10.2 0C10.18 0 10.17 0 10.15 0C9.27999 0 8.51999 0.56 8.15999 1.48C7.69999 2.65 7.20999 3.74 6.84999 4.4L1.63999 11.49C0.609993 12.76 0.0399933 14.37 0.0399933 16.05V22.14C0.0399933 25.93 3.11999 29 6.89999 29H17.83C19.21 29 20.34 27.88 20.34 26.49V25.62C20.34 25.14 20.2 24.69 19.97 24.3C20.71 23.86 21.21 23.06 21.21 22.14V21.27C21.21 20.79 21.07 20.34 20.84 19.95C21.58 19.51 22.08 18.71 22.08 17.78V16.91C22.08 16.43 21.94 15.98 21.71 15.59C22.45 15.15 22.95 14.35 22.95 13.42V12.55C22.95 11.19 21.83 10.06 20.45 10.06ZM21.42 13.44C21.42 13.98 20.98 14.41 20.45 14.41H19.58H18.35V15.94H19.58C20.12 15.94 20.55 16.38 20.55 16.91V17.78C20.55 18.32 20.11 18.75 19.58 18.75H18.7H17.47V20.28H18.7C19.24 20.28 19.67 20.72 19.67 21.25V22.12C19.67 22.66 19.23 23.09 18.7 23.09H17.83H16.6V24.62H17.83C18.37 24.62 18.8 25.06 18.8 25.59V26.46C18.8 27 18.36 27.43 17.83 27.43H6.89999C3.96999 27.43 1.57999 25.04 1.57999 22.11V16.01C1.57999 14.69 2.01999 13.41 2.85999 12.39L8.11999 5.23L8.16999 5.15C8.74999 4.12 9.35999 2.6 9.58999 2C9.65999 1.81 9.83999 1.5 10.15 1.5H10.16C10.37 1.5 10.64 1.65 10.74 1.97C11.1 3.04 11.24 3.71 11 4.41L8.79999 11.56H20.43C20.97 11.56 21.4 12 21.4 12.53L21.42 13.44Z" fill="white" />
+                                              <path class="svg-bg" opacity="0" d="M19.89 10.42H10.8L12.3 5.54C12.65 4.52 12.47 3.59 12.04 2.33C11.76 1.48 11 0.900005 10.14 0.880005C10.13 0.880005 10.11 0.880005 10.09 0.880005C9.26 0.880005 8.54 1.41 8.19 2.28C7.76 3.4 7.3 4.43 6.95 5.05L2 11.78C1.02 12.98 0.479996 14.51 0.479996 16.1V21.88C0.479996 25.47 3.41 28.38 7.01 28.38H17.41C18.72 28.38 19.8 27.31 19.8 26V25.18C19.8 24.72 19.67 24.3 19.45 23.93C20.16 23.52 20.63 22.75 20.63 21.88V21.05C20.63 20.59 20.5 20.17 20.28 19.8C20.99 19.39 21.46 18.62 21.46 17.75V16.92C21.46 16.46 21.33 16.04 21.11 15.67C21.82 15.26 22.29 14.49 22.29 13.62V12.79C22.27 11.48 21.2 10.42 19.89 10.42Z" fill="white" />
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_2216_146">
+                                                <rect width="23" height="29" fill="white" />
+                                              </clipPath>
+                                            </defs>
+                                          </svg>
+                                    </button>
+                                </div>
+                                <div class="swp-realty-card__body">
+                                    <div class="swp-realty-card__top-description">
+                                        <p class="swp-realty-card__realty-name">MANTERA</p>
+    
+                                        <ul class="swp-realty-card__options">
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/location.svg" alt="">
+                                                </div>
+                                                
+                                                <span>Сочи</span>
+                                            </li>
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/sea.svg" alt="">
+                                                </div>
+                                                
+                                                <span>300 м</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swp-realty-card__text-description">
+                                        <p>Многофункциональный комплекс MANTERA Seaview residence расположен в самом сердце новой федеральной территории "Сириус" - рядом с Олимпийским парком, Сочи-Парком ...</p>                                    
+                                    </div>
+                                    <div class="swp-realty-card__price-block">
+                                        <span class="swp-realty-card__price-caption">Стоимость</span>
+                                        <span class="swp-realty-card__price-value">от 20 000 000 ₽</span>
+                                    </div>
+    
+                                    <div class="swp-realty-card__btns">
+                                        <a href="#" class="swp-realty-card__details gold-outline-btn">Подробнее</a>
+                                        <a href="catalog.html" class="swp-realty-card__catalog gradient-btn">Каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide  swp-realty-card">
+                                <div class="swp-realty-card__photo">
+                                    <img src="assets/img/hotels/2.jpg" alt="">
+    
+                                    <button class="swp-realty-card__add-favorite">
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2216_146)">
+                                              <path d="M20.45 10.06H10.89L12.47 4.91C12.83 3.83 12.65 2.85 12.2 1.52C11.9 0.63 11.1 0.02 10.2 0C10.18 0 10.17 0 10.15 0C9.27999 0 8.51999 0.56 8.15999 1.48C7.69999 2.65 7.20999 3.74 6.84999 4.4L1.63999 11.49C0.609993 12.76 0.0399933 14.37 0.0399933 16.05V22.14C0.0399933 25.93 3.11999 29 6.89999 29H17.83C19.21 29 20.34 27.88 20.34 26.49V25.62C20.34 25.14 20.2 24.69 19.97 24.3C20.71 23.86 21.21 23.06 21.21 22.14V21.27C21.21 20.79 21.07 20.34 20.84 19.95C21.58 19.51 22.08 18.71 22.08 17.78V16.91C22.08 16.43 21.94 15.98 21.71 15.59C22.45 15.15 22.95 14.35 22.95 13.42V12.55C22.95 11.19 21.83 10.06 20.45 10.06ZM21.42 13.44C21.42 13.98 20.98 14.41 20.45 14.41H19.58H18.35V15.94H19.58C20.12 15.94 20.55 16.38 20.55 16.91V17.78C20.55 18.32 20.11 18.75 19.58 18.75H18.7H17.47V20.28H18.7C19.24 20.28 19.67 20.72 19.67 21.25V22.12C19.67 22.66 19.23 23.09 18.7 23.09H17.83H16.6V24.62H17.83C18.37 24.62 18.8 25.06 18.8 25.59V26.46C18.8 27 18.36 27.43 17.83 27.43H6.89999C3.96999 27.43 1.57999 25.04 1.57999 22.11V16.01C1.57999 14.69 2.01999 13.41 2.85999 12.39L8.11999 5.23L8.16999 5.15C8.74999 4.12 9.35999 2.6 9.58999 2C9.65999 1.81 9.83999 1.5 10.15 1.5H10.16C10.37 1.5 10.64 1.65 10.74 1.97C11.1 3.04 11.24 3.71 11 4.41L8.79999 11.56H20.43C20.97 11.56 21.4 12 21.4 12.53L21.42 13.44Z" fill="white" />
+                                              <path class="svg-bg" opacity="0" d="M19.89 10.42H10.8L12.3 5.54C12.65 4.52 12.47 3.59 12.04 2.33C11.76 1.48 11 0.900005 10.14 0.880005C10.13 0.880005 10.11 0.880005 10.09 0.880005C9.26 0.880005 8.54 1.41 8.19 2.28C7.76 3.4 7.3 4.43 6.95 5.05L2 11.78C1.02 12.98 0.479996 14.51 0.479996 16.1V21.88C0.479996 25.47 3.41 28.38 7.01 28.38H17.41C18.72 28.38 19.8 27.31 19.8 26V25.18C19.8 24.72 19.67 24.3 19.45 23.93C20.16 23.52 20.63 22.75 20.63 21.88V21.05C20.63 20.59 20.5 20.17 20.28 19.8C20.99 19.39 21.46 18.62 21.46 17.75V16.92C21.46 16.46 21.33 16.04 21.11 15.67C21.82 15.26 22.29 14.49 22.29 13.62V12.79C22.27 11.48 21.2 10.42 19.89 10.42Z" fill="white" />
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_2216_146">
+                                                <rect width="23" height="29" fill="white" />
+                                              </clipPath>
+                                            </defs>
+                                          </svg>
+                                    </button>
+                                </div>
+                                <div class="swp-realty-card__body">
+                                    <div class="swp-realty-card__top-description">
+                                        <p class="swp-realty-card__realty-name">MANTERA</p>
+    
+                                        <ul class="swp-realty-card__options">
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/location.svg" alt="">
+                                                </div>
+                                                
+                                                <span>Сочи</span>
+                                            </li>
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/sea.svg" alt="">
+                                                </div>
+                                                
+                                                <span>300 м</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swp-realty-card__text-description">
+                                        <p>Многофункциональный комплекс MANTERA Seaview residence расположен в самом сердце новой федеральной территории "Сириус" - рядом с Олимпийским парком, Сочи-Парком ...</p>                                    
+                                    </div>
+                                    <div class="swp-realty-card__price-block">
+                                        <span class="swp-realty-card__price-caption">Стоимость</span>
+                                        <span class="swp-realty-card__price-value">от 20 000 000 ₽</span>
+                                    </div>
+    
+                                    <div class="swp-realty-card__btns">
+                                        <a href="#" class="swp-realty-card__details gold-outline-btn">Подробнее</a>
+                                        <a href="catalog.html" class="swp-realty-card__catalog gradient-btn">Каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide  swp-realty-card all">
+                                <div class="swp-realty-card__all-link-container">
+                                    <a href="#" class="swp-realty-card__details gold-outline-btn">Весь каталог</a>
+                                </div>
+
+                                <div class="swp-realty-card__photo">
+                                    <img src="assets/img/hotels/2.jpg" alt="">
+    
+                                    <button class="swp-realty-card__add-favorite">
+                                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_2216_146)">
+                                              <path d="M20.45 10.06H10.89L12.47 4.91C12.83 3.83 12.65 2.85 12.2 1.52C11.9 0.63 11.1 0.02 10.2 0C10.18 0 10.17 0 10.15 0C9.27999 0 8.51999 0.56 8.15999 1.48C7.69999 2.65 7.20999 3.74 6.84999 4.4L1.63999 11.49C0.609993 12.76 0.0399933 14.37 0.0399933 16.05V22.14C0.0399933 25.93 3.11999 29 6.89999 29H17.83C19.21 29 20.34 27.88 20.34 26.49V25.62C20.34 25.14 20.2 24.69 19.97 24.3C20.71 23.86 21.21 23.06 21.21 22.14V21.27C21.21 20.79 21.07 20.34 20.84 19.95C21.58 19.51 22.08 18.71 22.08 17.78V16.91C22.08 16.43 21.94 15.98 21.71 15.59C22.45 15.15 22.95 14.35 22.95 13.42V12.55C22.95 11.19 21.83 10.06 20.45 10.06ZM21.42 13.44C21.42 13.98 20.98 14.41 20.45 14.41H19.58H18.35V15.94H19.58C20.12 15.94 20.55 16.38 20.55 16.91V17.78C20.55 18.32 20.11 18.75 19.58 18.75H18.7H17.47V20.28H18.7C19.24 20.28 19.67 20.72 19.67 21.25V22.12C19.67 22.66 19.23 23.09 18.7 23.09H17.83H16.6V24.62H17.83C18.37 24.62 18.8 25.06 18.8 25.59V26.46C18.8 27 18.36 27.43 17.83 27.43H6.89999C3.96999 27.43 1.57999 25.04 1.57999 22.11V16.01C1.57999 14.69 2.01999 13.41 2.85999 12.39L8.11999 5.23L8.16999 5.15C8.74999 4.12 9.35999 2.6 9.58999 2C9.65999 1.81 9.83999 1.5 10.15 1.5H10.16C10.37 1.5 10.64 1.65 10.74 1.97C11.1 3.04 11.24 3.71 11 4.41L8.79999 11.56H20.43C20.97 11.56 21.4 12 21.4 12.53L21.42 13.44Z" fill="white" />
+                                              <path class="svg-bg" opacity="0" d="M19.89 10.42H10.8L12.3 5.54C12.65 4.52 12.47 3.59 12.04 2.33C11.76 1.48 11 0.900005 10.14 0.880005C10.13 0.880005 10.11 0.880005 10.09 0.880005C9.26 0.880005 8.54 1.41 8.19 2.28C7.76 3.4 7.3 4.43 6.95 5.05L2 11.78C1.02 12.98 0.479996 14.51 0.479996 16.1V21.88C0.479996 25.47 3.41 28.38 7.01 28.38H17.41C18.72 28.38 19.8 27.31 19.8 26V25.18C19.8 24.72 19.67 24.3 19.45 23.93C20.16 23.52 20.63 22.75 20.63 21.88V21.05C20.63 20.59 20.5 20.17 20.28 19.8C20.99 19.39 21.46 18.62 21.46 17.75V16.92C21.46 16.46 21.33 16.04 21.11 15.67C21.82 15.26 22.29 14.49 22.29 13.62V12.79C22.27 11.48 21.2 10.42 19.89 10.42Z" fill="white" />
+                                            </g>
+                                            <defs>
+                                              <clipPath id="clip0_2216_146">
+                                                <rect width="23" height="29" fill="white" />
+                                              </clipPath>
+                                            </defs>
+                                          </svg>
+                                    </button>
+                                </div>
+                                <div class="swp-realty-card__body">
+                                    <div class="swp-realty-card__top-description">
+                                        <p class="swp-realty-card__realty-name">MANTERA</p>
+    
+                                        <ul class="swp-realty-card__options">
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/location.svg" alt="">
+                                                </div>
+                                                
+                                                <span>Сочи</span>
+                                            </li>
+                                            <li>
+                                                <div class="swp-realty-card__option-icon">
+                                                    <img src="assets/img/icons/realty/sea.svg" alt="">
+                                                </div>
+                                                
+                                                <span>300 м</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="swp-realty-card__text-description">
+                                        <p>Многофункциональный комплекс MANTERA Seaview residence расположен в самом сердце новой федеральной территории "Сириус" - рядом с Олимпийским парком, Сочи-Парком ...</p>                                    
+                                    </div>
+                                    <div class="swp-realty-card__price-block">
+                                        <span class="swp-realty-card__price-caption">Стоимость</span>
+                                        <span class="swp-realty-card__price-value">от 20 000 000 ₽</span>
+                                    </div>
+    
+                                    <div class="swp-realty-card__btns">
+                                        <a href="#" class="swp-realty-card__details gold-outline-btn">Подробнее</a>
+                                        <a href="catalog.html" class="swp-realty-card__catalog gradient-btn">Каталог</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section partners">
+            <div class="container">
+                <div class="swiper partners-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/азимут.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/алиян.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/зонт.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/космос.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/мериот.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/прайм.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/радиссон.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/рамада.png" alt="">   
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/partners/хилтон.png" alt="">   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about-investment">
+            <div class="container">
+                <div class="about-investment__img-mob-slot">
+                    <div class="about-investment__photo" data-to-jump=".about-investment__img-desk-slot" data-media-jump="1280">
+                        <img src="assets/img/company.jpg" alt="">
+                    </div>
+                </div>
+                <h2>ИНВЕСТИЦИИ В АПАРТАМЕНТНЫЕ  КОМПЛЕКСЫ И ОТЕЛИ КУРОРТА</h2>
+
+                <div class="about-investment__item-list">
+                    <div class="about-investment__item item-1">
+                        <div class="about-investment__item-icon">
+                            <img src="assets/img/icons/investment/icon_investment_1.svg" alt="">
+                        </div>
+                        <p>Апартаменты с видом на море являются самым ликвидным видом недвижимости в мире</p>
+                    </div>
+                    <div class="about-investment__item item-2">
+                        <div class="about-investment__item-icon">
+                            <img src="assets/img/icons/investment/icon_investment_2.svg" alt="">
+                        </div>
+                        <p>Совершая покупку, вы становитесь единоличным собственником  апартаментов</p>
+                    </div>
+
+                    <div class="about-investment__img-desk-slot">
+
+                    </div>
+                    <div class="about-investment__item item-3">
+                        <div class="about-investment__item-icon">
+                            <img src="assets/img/icons/investment/icon_investment_3.svg" alt="">
+                        </div>
+                        <p>Заключите договор на управление с отельным оператором и получайте пассивный доход до 15% в год</p>
+                    </div>
+                    <div class="about-investment__item item-4">
+                        <div class="about-investment__item-icon">
+                            <img src="assets/img/icons/investment/icon_investment_4.svg" alt="">
+                        </div>
+                        <p>Совершите покупку на начальном этапе строительства и заработайте до 100% за 1,5-2 года на перепродаже</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="section about-sochi">
+            <div class="container">
+                <div class="about-sochi__content">
+                    <div class="about-sochi__picture-container">
+                        <div class="about-sochi__picture">
+                            <img src="assets/img/sochi.jpg" alt="">
+                            <img src="assets/img/sochi.jpg" alt="">
+                            <img src="assets/img/sochi.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <h2 class="about-sochi__title">Современный курорт Сочи</h2>
+                    <p>Откройте для себя заново лучший курорт нашей страны! Сочи сегодня, это точка притяжения туристов из России и зарубежья, спортивный и культурный центр, площадка для бизнеса и международных государственных переговоров. Зимние олимпийские игры 2014 года дали мощный стимул развития, результаты которого можно наблюдать на протяжении последних 10 лет – с каждым годом курорт преображается, активно развивается курортная индустрия и повышается качество сервиса. По многим параметрам Сочи уже приблизился к уровню всемирно известных курортов, а в чем-то даже превзошел их! Сочетание морского побережья и горного Кавказского заповедника делает Сочи уникальным круглогодичным курортом с огромным потенциалом развития!</p>
+                    <div class="about-sochi__btn-container">
+                        <a href="#" class="blue-outline-btn">Подробнее</a>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section about-am">
+            <div class="container">
+                <div class="about-am__content">
+                    <div class="about-am__photo-container">
+                        <img src="assets/img/alexander-moskovcev.jpg" alt="" class="about-am__photo">
+                    </div>
+                    <div class="about-am__text-block">
+                        <h2>Александр Московцев</h2>
+                        <p>На рынке курортной недвижимости Сочи с 2018 года </p>
+                        <p>Моя цель – предоставить вам качественный сервис, связанный с приобретением или продажей недвижимости на курорте. </p>
+                        <p>Моя задача – понять вашу потребность и оказать профессиональное содействие в ее реализации. </p>
+                        <p>Один из моих клиентов как-то сказал: «Если бы я хотел провести множество часов в разговорах с риелторами, обсуждая варианты из их базы, я бы обратился в рядовое агентство. Но мне нужно было в короткие сроки приобрести объект под конкретную цель, поэтому я выбрал профессионала, который уже проделал всю эту работу за меня».</p>
+                        <p>Сотрудничество со мной будет полезно людям, которые ценят свое время и для решения непрофильных вопросов, предпочитают обращаться к экспертам, гарантированно получая желаемый результат!</p>                                               
+                        
+                    </div>
+                    <div class="about-am__btn-container" data-to-jump=".about-am__text-block" data-media-jump="1280">
+                        <button class="gradient-btn">Получить предложение</button>
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="section form-section">
+            <div class="container">
+
+                <div class="form-section__content">
+                    <h2>ПОЛУЧИТЕ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ ОТ ЭКСПЕРТА В НЕДВИЖИМОСТИ</h2>
+                    <p class="form-section__subtitle">Заполните ваши данные и специалист свяжется с вами в ближайшее время</p>
+
+                    <form class="form">
+                        <div class="form__input-group">
+                            <div class="form__input-wrap">
+                                <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+                            </div>
+
+                            <div class="form__input-wrap">
+                                <input type="text" class="form__input" name="phone" placeholder="Телефон">
+                            </div>
+                        </div>
+
+                        <p class="form__privacy-text">Нажимая на кнопку “Отправить” , вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+
+                        <div class="form__submit-wrap">
+                            <button class="gradient-btn">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            
+            
+        </section>
+
+@@include('templates/footer.html')   
+        

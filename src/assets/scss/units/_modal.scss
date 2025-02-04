@@ -1,0 +1,167 @@
+.hystmodal__shadow{
+    z-index: 2000;
+}
+.hystmodal{
+    z-index: 2001;
+}
+
+.modal{
+    
+    
+}
+.modal-body.thanks-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+}
+
+
+.modal-content{
+    opacity: 0;
+}
+.hystmodal--active{
+    .modal-content{
+        background-color: #fff;
+        padding: 50px 30px 40px;
+        position: relative;
+        opacity: 1;
+    }
+}
+
+.hystmodal__window{
+    //padding: 42px 16px 20px;
+    background: var(--grey-1);
+    border: 1px solid #e6e6e6;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh;
+   
+
+    border-radius: 0px;
+    position: relative;
+
+    @media (min-width: 640px){
+       // border-radius: 20px;    
+        //padding: 20px 20px 30px;
+        min-height: unset;
+        width: calc(100vw - 64px);
+    }
+
+
+    
+    max-width: 1520px;
+
+    
+}
+
+
+.hystmodal__window.hystmodal__window_thanks{
+    width: calc(100vw - 32px);
+    max-width: 360px;
+    padding: 24px;
+    min-height: unset;
+    
+}
+.modal-dialog{
+    width: 100vw;
+    max-width: 480px;
+}
+
+
+.close-modal{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    svg{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.hystmodal__window{
+    padding-top: 32px;
+
+    @media (min-width: 640px){
+        padding-top: 0px;
+    }
+}
+
+
+
+.form__bottom-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    
+
+    @media (min-width: 640px){
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        column-gap: 24px;
+    }
+}
+
+.modal-body.thanks-body{
+    
+    img{
+        max-width: 240px;
+        height: auto;
+    }
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('../fonts/Philosopher/Philosopher-BoldItalic.eot');
+    src: local('Philosopher Bold Italic'), local('Philosopher-BoldItalic'),
+        url('../fonts/Philosopher/Philosopher-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Philosopher/Philosopher-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Philosopher/Philosopher-BoldItalic.woff') format('woff'),
+        url('../fonts/Philosopher/Philosopher-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('../fonts/Philosopher/Philosopher-Italic.eot');
+    src: local('Philosopher Italic'), local('Philosopher-Italic'),
+        url('../fonts/Philosopher/Philosopher-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Philosopher/Philosopher-Italic.woff2') format('woff2'),
+        url('../fonts/Philosopher/Philosopher-Italic.woff') format('woff'),
+        url('../fonts/Philosopher/Philosopher-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('../fonts/Philosopher/Philosopher-Regular.eot');
+    src: local('Philosopher Regular'), local('Philosopher-Regular'),
+        url('../fonts/Philosopher/Philosopher-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Philosopher/Philosopher-Regular.woff2') format('woff2'),
+        url('../fonts/Philosopher/Philosopher-Regular.woff') format('woff'),
+        url('../fonts/Philosopher/Philosopher-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('../fonts/Philosopher/Philosopher-Bold.eot');
+    src: local('Philosopher Bold'), local('Philosopher-Bold'),
+        url('../fonts/Philosopher/Philosopher-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Philosopher/Philosopher-Bold.woff2') format('woff2'),
+        url('../fonts/Philosopher/Philosopher-Bold.woff') format('woff'),
+        url('../fonts/Philosopher/Philosopher-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
