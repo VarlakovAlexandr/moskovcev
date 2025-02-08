@@ -204,6 +204,19 @@
             
         }
     }
+
+    .gradient-btn{
+        @media (min-width: 940px){
+            font-weight: bold;
+            font-size: 19px;
+            padding: 6px 24px;
+        }
+        @media (min-width: 1280px){
+            font-size: 25px;
+            padding: 6px 20px;
+            font-weight: 400;
+        }
+    }
 }
 .articles__container-list{
     padding: 40px 0;
@@ -224,6 +237,19 @@
 .articles__list{
     overflow: hidden;
     max-height: 200vh;
+
+    .gradient-btn{
+        @media (min-width: 940px){
+            padding: 6px 22px;
+            font-size: 19px;
+            min-width: unset;
+            width: auto;
+        }
+        @media (min-width: 1280px){
+            font-size: 23px;
+            padding: 8px 32px;
+        }
+    }
 }
 .articles__list-inner{
     display: grid;

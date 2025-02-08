@@ -5,6 +5,20 @@
     background-color: rgb(245, 245, 245);
 
     @include calculateResponsiveProperty(390px, 960px, 20px, 40px, padding-top);
+
+
+    .gradient-btn{
+        padding: 12px 18px;
+        font-weight: bold;
+        @media (min-width: 960px){
+            padding: 10px 15px;
+        }
+
+        @media (min-width: 1280px){
+            font-size: 27px;
+            padding: 12px 44px;
+        }
+    }
 }
 
 
@@ -120,5 +134,19 @@
 .about-am__text-block{
     @media (min-width: 1280px){
         margin-top: 48px;
+    }
+}
+
+.about-am__text-block{
+    li{
+        display: flex;
+        &::before{
+            content: "•";
+            display: inline-flex;
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+            padding: 0 8px;
+        }
     }
 }
